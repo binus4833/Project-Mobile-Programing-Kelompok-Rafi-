@@ -7,6 +7,9 @@
 5. Ivan Austen Suryajaya - 2201751291
 6. Christopher Owen - 2201750591
 
+## Note
+Progress sudah tertera di description dan CompShop (Final App) adalah hasil akhir project kami
+
 
 
 ### ScreenShot Per Pages
