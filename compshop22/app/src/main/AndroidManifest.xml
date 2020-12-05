@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.compshop2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/comp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/comp_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".myorder"></activity>
+        <activity android:name=".flashdisk4" />
+        <activity android:name=".flashdisk3" />
+        <activity android:name=".flashdisk2" />
+        <activity android:name=".flashdisk1" />
+        <activity android:name=".keyboard2" />
+        <activity android:name=".keyboard1" />
+        <activity android:name=".mouse2" />
+        <activity android:name=".mouse1" />
+        <activity android:name=".memory4" />
+        <activity android:name=".memory3" />
+        <activity android:name=".memory2" />
+        <activity android:name=".memory1" />
+        <activity android:name=".ssd4" />
+        <activity android:name=".ssd3" />
+        <activity android:name=".ssd2" />
+        <activity android:name=".ssd1" />
+        <activity android:name=".harddisk4" />
+        <activity android:name=".harddisk3" />
+        <activity android:name=".harddisk2" />
+        <activity android:name=".harddisk1" />
+        <activity android:name=".flashdisk" />
+        <activity android:name=".keyboard" />
+        <activity android:name=".mouse" />
+        <activity android:name=".memory" />
+        <activity android:name=".ssd" />
+        <activity android:name=".hardDisk" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
