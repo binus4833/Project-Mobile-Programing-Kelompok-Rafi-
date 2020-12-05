@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo__back_putih_"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nCompShop"
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView3"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kav 21, Alam Sutera Jalan Jalur Sutera Barat Panunggangan Timur, RT.001/RW.004, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143\n"
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        android:layout_below="@id/textView4"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jam Operational"
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/textView5"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senin - Sabtu 09.00 - 20.00\nKecuali Libur Nasional\n\n"
+        android:textSize="8pt"
+        android:textColor="@color/black"
+        android:layout_below="@id/textView6"/>
+
+
+    <Button
+        android:id="@+id/googleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CompShop Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/textView7"/>
+
+
+
+</RelativeLayout>
