@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myorder"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="283dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="@string/order_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashdisk1_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/order_header">
+
+                <Button
+                    android:id="@+id/removeFlashdisk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeFlashdisk1"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/flashdisk1_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/flashdisk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/flashdisk1_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/flashdiskImg1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/flashdisk_img"
+                    android:src="@drawable/flashdisk" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashdisk2_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flashdisk1_card">
+
+                <Button
+                    android:id="@+id/removeFlashdisk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeFlashdisk2"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/flashdisk2_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/flashdisk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/flashdisk2_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/flashdiskImg2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/flashdisk_img"
+                    android:src="@drawable/flashdisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashdisk3_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flashdisk2_card">
+
+                <Button
+                    android:id="@+id/removeFlashdisk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeFlashdisk3"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/flashdisk3_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/flashdisk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/flashdisk3_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/flashdiskImg3"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/flashdisk_img"
+                    android:src="@drawable/flashdisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashdisk4_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flashdisk3_card">
+
+                <Button
+                    android:id="@+id/removeFlashdisk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeFlashdisk4"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/flashdisk4_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/flashdisk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/flashdisk4_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/flashdiskImg4"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/flashdisk_img"
+                    android:src="@drawable/flashdisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/harddisk1_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flashdisk4_card">
+
+                <Button
+                    android:id="@+id/removeHarddisk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeHarddisk1"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/harddisk1_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/harddisk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/harddisk1_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/harddiskImg1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/hardddisk_img"
+                    android:src="@drawable/harddisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/harddisk2_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/harddisk1_card">
+
+                <Button
+                    android:id="@+id/removeHarddisk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeHarddisk2"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/harddisk2_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/harddisk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/harddisk2_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/harddiskImg2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/hardddisk_img"
+                    android:src="@drawable/harddisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/harddisk3_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/harddisk2_card">
+
+                <Button
+                    android:id="@+id/removeHarddisk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeHarddisk3"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/harddisk3_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/harddisk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/harddisk3_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/harddiskImg3"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/hardddisk_img"
+                    android:src="@drawable/harddisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/harddisk4_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/harddisk3_card">
+
+                <Button
+                    android:id="@+id/removeHarddisk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeHarddisk4"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/harddisk4_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/harddisk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/harddisk4_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/harddiskImg4"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/hardddisk_img"
+                    android:src="@drawable/harddisk" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/keyboard1_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/harddisk4_card">
+
+                <Button
+                    android:id="@+id/removeKeyboard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeKeyboard1"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/keyboard1_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/keyboard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/keyboard1_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/keyboardImg1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/keyboard_img"
+                    android:src="@drawable/keyboard" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/keyboard2_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keyboard1_card">
+
+                <Button
+                    android:id="@+id/removeKeyboard2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeKeyboard2"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/keyboard2_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/keyboard2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/keyboard2_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/keyboardImg2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/keyboard_img"
+                    android:src="@drawable/keyboard" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/memory1_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keyboard2_card">
+
+                <Button
+                    android:id="@+id/removeMemory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeMemory1"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/memory1_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/memory1"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/memory1_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/memoryImg1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/memory_img"
+                    android:src="@drawable/memory" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/memory2_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memory1_card">
+
+                <Button
+                    android:id="@+id/removeMemory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeMemory2"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/memory2_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/memory2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/memory2_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/memoryImg2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/memory_img"
+                    android:src="@drawable/memory" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/memory3_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memory2_card">
+
+                <Button
+                    android:id="@+id/removeMemory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeMemory3"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/memory3_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/memory3"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/memory3_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/memoryImg3"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/memory_img"
+                    android:src="@drawable/memory" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/memory4_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memory3_card">
+
+                <Button
+                    android:id="@+id/removeMemory4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeMemory4"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/memory4_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/memory4"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/memory4_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/memoryImg4"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/memory_img"
+                    android:src="@drawable/memory" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mouse1_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memory4_card">
+
+                <Button
+                    android:id="@+id/removeMouse1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeMouse1"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/mouse1_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mouse1"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/mouse1_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/mouseImg1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/mouse_img"
+                    android:src="@drawable/mouse" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mouse2_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mouse1_card">
+
+                <Button
+                    android:id="@+id/removeMouse2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeMouse2"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/mouse2_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mouse2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/mouse2_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/mouseImg2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/mouse_img"
+                    android:src="@drawable/mouse" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ssd1_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mouse2_card">
+
+                <Button
+                    android:id="@+id/removeSsd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeSsd1"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/ssd1_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ssd1"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ssd1_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ssdImg1"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/ssd_img"
+                    android:src="@drawable/ssd" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ssd2_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ssd1_card">
+
+                <Button
+                    android:id="@+id/removeSsd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeSsd2"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/ssd2_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ssd2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ssd2_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ssdImg2"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/ssd_img"
+                    android:src="@drawable/ssd" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ssd3_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ssd2_card">
+
+                <Button
+                    android:id="@+id/removeSsd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeSsd3"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/ssd3_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ssd3"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ssd3_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ssdImg3"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/ssd_img"
+                    android:src="@drawable/ssd" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ssd4_card"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ssd3_card">
+
+                <Button
+                    android:id="@+id/removeSsd4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="80dp"
+                    android:onClick="removeSsd4"
+                    android:text="@string/remove_btn" />
+
+                <TextView
+                    android:id="@+id/ssd4_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="start"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ssd4"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/ssd4_name"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/ssdImg4"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/ssd_img"
+                    android:src="@drawable/ssd" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

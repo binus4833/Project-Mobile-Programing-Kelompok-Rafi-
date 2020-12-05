@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "365904639377",
+    "firebase_url": "https://compshop22-65a82.firebaseio.com",
+    "project_id": "compshop22-65a82",
+    "storage_bucket": "compshop22-65a82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365904639377:android:8d7f7d873198f89a531630",
+        "android_client_info": {
+          "package_name": "com.example.compshop2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365904639377-las1hcng8ciab57is3vbnqpqdtqdnv6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJJIirLn9G8xBBjvI1qR8IagzZhCZAmqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365904639377-las1hcng8ciab57is3vbnqpqdtqdnv6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
