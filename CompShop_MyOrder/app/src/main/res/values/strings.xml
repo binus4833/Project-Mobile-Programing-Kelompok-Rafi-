@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Comp Shop</string>
+    <string name="remove_btn">Remove</string>
+    <string name="flashdisk1_detail">%d x Rp %d = %d</string>
+    <string name="flashdisk1_name">Flashdisk 8 GB</string>
+    <string name="flashdisk2_detail">%d x Rp %d = %d</string>
+    <string name="flashdisk2_name">Flashdisk 16 GB</string>
+    <string name="flashdisk3_detail">%d x Rp %d = %d</string>
+    <string name="flashdisk3_name">Flashdisk 32 GB</string>
+    <string name="flashdisk4_detail">%d x Rp %d = %d</string>
+    <string name="flashdisk4_name">Flashdisk 64 GB</string>
+    <string name="flashdisk_img">Flashdisk</string>
+    <string name="harddisk1_detail">%d x Rp %d = %d</string>
+    <string name="harddisk1_name">HardDisk 1 TB</string>
+    <string name="harddisk2_detail">%d x Rp %d = %d</string>
+    <string name="harddisk2_name">HardDisk 2 TB</string>
+    <string name="harddisk3_detail">%d x Rp %d = %d</string>
+    <string name="harddisk3_name">HardDisk 3 TB</string>
+    <string name="harddisk4_detail">%d x Rp %d = %d</string>
+    <string name="harddisk4_name">HardDisk 4 TB</string>
+    <string name="hardddisk_img">Harddisk</string>
+    <string name="keyboard1_detail">%d x Rp %d = %d</string>
+    <string name="keyboard1_name">Wired Keyboard</string>
+    <string name="keyboard2_detail">%d x Rp %d = %d</string>
+    <string name="keyboard2_name">Wireless Keyboard</string>
+    <string name="keyboard_img">Keyboard</string>
+    <string name="memory1_detail">%d x Rp %d = %d</string>
+    <string name="memory1_name">Memory 2 GB</string>
+    <string name="memory2_detail">%d x Rp %d = %d</string>
+    <string name="memory2_name">Memory 4 GB</string>
+    <string name="memory3_detail">%d x Rp %d = %d</string>
+    <string name="memory3_name">Memory 8 GB</string>
+    <string name="memory4_detail">%d x Rp %d = %d</string>
+    <string name="memory4_name">Memory 16 GB</string>
+    <string name="memory_img">Memory</string>
+    <string name="mouse1_detail">%d x Rp %d = %d</string>
+    <string name="mouse1_name">Wired Mouse</string>
+    <string name="mouse2_detail">%d x Rp %d = %d</string>
+    <string name="mouse2_name">Wireless Mouse</string>
+    <string name="mouse_img">Mouse</string>
+    <string name="ssd1_detail">%d x Rp %d = %d</string>
+    <string name="ssd1_name">SSD 1 TB</string>
+    <string name="ssd2_detail">%d x Rp %d = %d</string>
+    <string name="ssd2_name">SSD 2 TB</string>
+    <string name="ssd3_detail">%d x Rp %d = %d</string>
+    <string name="ssd3_name">SSD 3 TB</string>
+    <string name="ssd4_detail">%d x Rp %d = %d</string>
+    <string name="ssd4_name">SSD 4 TB</string>
+    <string name="ssd_img">SSD</string>
+    <string name="total_price_items">Total: Rp %d</string>
+    <string name="navigation_drawer_open"> Open navigation drawer </string>
+    <string name="navigation_drawer_close"> Close navigation drawer </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Description
+    <string name="desc">CompShop merupakan online store yang dibuat oleh mahasiswa Universitas Bina Nusantara dalam rangka project mata kuliah Mobile Programming. CompShop menjual komponen komponen computer seperti Hard Disk, Flash Disk, SSD, RAM, Keyboard, dan Mouse</string>
+
+    //Location
+    <string name="loct"></string>
+</resources>
