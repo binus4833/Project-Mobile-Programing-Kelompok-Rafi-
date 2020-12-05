@@ -1,0 +1,20 @@
+Button button = (Button)findViewById(R.id.gmaps);
+    gmaps.setOnClickListener(new View.OnClickListener()
+
+        public void MoveToGMaps(View view) {
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_VIEW);
+            intent.addCategory(Intent.CATEGORY_BROWSABLE);
+            intent.setData(Uri.parse("https://www.google.com/maps"));
+            startActivity(intent);
+        }
+    });
+
+<Button
+        android:textSize="20dp"
+        android:id="@+id/gmaps"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Look more"
+        android:onClick="MoveToGMaps"/>
